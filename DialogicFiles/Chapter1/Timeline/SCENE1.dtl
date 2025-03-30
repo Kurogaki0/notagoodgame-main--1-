@@ -1,0 +1,16 @@
+[background arg="res://Assets/Png/dialouge bg/road.jpg" fade="0.0"]
+Narrator: The morning sun bathed Daimon High in a warm glow, casting long shadows across the courtyard where students bustled about, chatting and laughing as they headed to their classes.
+join Melody center
+Melody: Hey! Wait up!
+Narrator: [Player Name] turned, a smile tugging at the corners of their lips as Melody jogged to catch up, her ponytail bouncing behind her.
+join Player1 center
+Player1: Morning, Mel.
+Melody: Morning! Ready to slay another masterpiece today?
+Narrator: [Player Name] chuckled softly, their sketchbook clutched tightly.
+Player1: I hope so. Mr. Davison said we’re working on light and water reflections. I’ve been practicing all weekend.
+Melody: Of course you have. You’re obsessed!
+Player1: Not obsessed… just dedicated.
+Narrator: Melody grinned.
+Melody: Same thing. You’re gonna post it later, right?
+Player1: Yeah. I think this one’s my best yet.
+Melody: Can’t wait to see the likes roll in!

@@ -1,0 +1,19 @@
+Narrator: -The player and his neighbor friend arrive at the front gate of the school and see their close friends sitting nearby at a bench-
+Player: “Look there they are”
+Player: ~points to their friends~
+"Neighbor Friend": Let’s go say hi!
+"Friend 1": Hey it’s ( Player) and  (Neighbor Friend)
+- Option 1
+	Player: You guys Good?
+	"Friend 2": We're currently cramming the homework!
+	Player: Guys you should have done it last night.
+	"Friend 1": WoW, you were with us playing last night!
+	"Friend 2": YEAH! How come you’re not cramming with us?
+- Option 2
+	Player: You guys look like you’re in deep trouble?
+	"Friend 2": We're currently cramming the homework!
+	Player: Tsk tsk! Look who did it beforehand
+	/~The player makes a smug face and gloats his work to his friends~
+	"Friend 1": Wow, you actually finished it?
+	"Neighbor Friend": Let’s head in guys before the bell rings!
+[wait time="1.0"]

@@ -1,0 +1,210 @@
+[gd_scene load_steps=22 format=3 uid="uid://b3gk5mghsk55e"]
+
+[ext_resource type="PackedScene" uid="uid://qwh2y8bqcgru" path="res://Assets/Tiled/Tiled/top flor.tmx" id="1_7xv44"]
+[ext_resource type="Script" uid="uid://d11klc0qrax6g" path="res://Scripts/house.gd" id="1_rbkps"]
+[ext_resource type="PackedScene" uid="uid://d3wd2dmvktss" path="res://Assets/Tiled/Tiled/down flor.tmx" id="2_2hpta"]
+[ext_resource type="PackedScene" uid="uid://bajs0k2b6myfv" path="res://Scene/player.tscn" id="3_4h5mx"]
+[ext_resource type="Script" uid="uid://daxnruy374aau" path="res://Scripts/transfer.gd" id="4_ya2i4"]
+[ext_resource type="Shader" uid="uid://bbpufknmbxny6" path="res://Scripts/shader.gdshader" id="5_1egca"]
+[ext_resource type="Texture2D" uid="uid://dml4nctffxdnt" path="res://Assets/Clouds/Clouds 4/1.png" id="6_vp3is"]
+[ext_resource type="Texture2D" uid="uid://dbmnpxngwyh8s" path="res://Assets/Clouds/Clouds 4/2.png" id="7_daw4y"]
+[ext_resource type="Texture2D" uid="uid://bs64phsf5sh6p" path="res://Assets/Clouds/Clouds 4/3.png" id="8_os08i"]
+[ext_resource type="Texture2D" uid="uid://cbb6xfwpf8ul6" path="res://Assets/Clouds/Clouds 4/4.png" id="9_ceor7"]
+
+[sub_resource type="Animation" id="Animation_r8k4o"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/TextEdit:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_wc7ps"]
+resource_name = "fade_to_normal"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.43333, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/TextEdit:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_87msn"]
+_data = {
+&"RESET": SubResource("Animation_r8k4o"),
+&"fade_to_normal": SubResource("Animation_wc7ps")
+}
+
+[sub_resource type="FontFile" id="FontFile_stpqr"]
+cache/0/14/0/ascent = 0.0
+cache/0/14/0/descent = 0.0
+cache/0/14/0/underline_position = 0.0
+cache/0/14/0/underline_thickness = 0.0
+cache/0/14/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+
+[sub_resource type="Theme" id="Theme_awb3x"]
+default_font = SubResource("FontFile_stpqr")
+default_font_size = 16
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_045cs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_856iv"]
+size = Vector2(59, 29)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i72ry"]
+shader = ExtResource("5_1egca")
+shader_parameter/speed = 0.05
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_apvjw"]
+shader = ExtResource("5_1egca")
+shader_parameter/speed = 0.025
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kqclu"]
+shader = ExtResource("5_1egca")
+shader_parameter/speed = 0.015
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sma3l"]
+shader = ExtResource("5_1egca")
+shader_parameter/speed = 0.01
+
+[node name="Node2D" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_rbkps")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_87msn")
+}
+
+[node name="ColorRect" type="ColorRect" parent="AnimationPlayer"]
+offset_left = -176.0
+offset_top = -132.0
+offset_right = 1624.0
+offset_bottom = 884.0
+color = Color(0, 0, 0, 0)
+
+[node name="TextEdit" type="TextEdit" parent="AnimationPlayer"]
+offset_left = 588.0
+offset_top = 104.0
+offset_right = 794.0
+offset_bottom = 140.0
+theme = SubResource("Theme_awb3x")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_045cs")
+text = "Chapter 0: The First Message"
+
+[node name="top flor" parent="." instance=ExtResource("1_7xv44")]
+position = Vector2(68, -1)
+scale = Vector2(1.8, 1.8)
+
+[node name="down flor" parent="." instance=ExtResource("2_2hpta")]
+position = Vector2(97, 245)
+scale = Vector2(1.8, 1.8)
+
+[node name="Player" parent="." instance=ExtResource("3_4h5mx")]
+position = Vector2(687, 123)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(6, 4)
+limit_smoothed = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+build_mode = 1
+polygon = PackedVector2Array(444, 151, 454, 151, 474, 152, 500, 151, 501, 171, 556, 171, 557, 157, 585, 160, 589, 146, 612, 146, 615, 106, 618, 129, 644, 127, 644, 92, 707, 95, 731, 96, 731, 125, 759, 124, 758, 256, 742, 218, 731, 259, 724, 261, 731, 503, 789, 503, 785, 430, 821, 427, 872, 429, 898, 432, 899, 391, 879, 398, 873, 380, 821, 378, 813, 396, 788, 387, 788, 311, 818, 313, 821, 340, 867, 341, 893, 339, 899, 330, 934, 330, 932, 621, 815, 619, 801, 591, 791, 620, 764, 652, 728, 619, 714, 588, 706, 620, 326, 620, 327, 514, 386, 514, 405, 524, 404, 465, 388, 482, 375, 437, 357, 436, 326, 433, 333, 385, 445, 384, 446, 457, 529, 458, 530, 489, 445, 490, 447, 518, 551, 517, 551, 528, 571, 530, 644, 526, 646, 490, 645, 258, 615, 257, 598, 232, 588, 256, 473, 258, 458, 221, 443, 259)
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("4_ya2i4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(759.5, 605.5)
+shape = SubResource("RectangleShape2D_856iv")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
+z_index = -4
+texture_filter = 1
+texture_repeat = 2
+material = SubResource("ShaderMaterial_i72ry")
+position = Vector2(694, 360)
+scale = Vector2(3, 3)
+texture = ExtResource("6_vp3is")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D"]
+z_index = -4
+texture_repeat = 2
+material = SubResource("ShaderMaterial_apvjw")
+position = Vector2(692, 361)
+scale = Vector2(3, 3)
+texture = ExtResource("7_daw4y")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Node2D"]
+z_index = -4
+texture_filter = 1
+texture_repeat = 2
+material = SubResource("ShaderMaterial_kqclu")
+position = Vector2(692, 361)
+scale = Vector2(3, 3)
+texture = ExtResource("8_os08i")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Node2D"]
+z_index = -4
+texture_filter = 1
+texture_repeat = 2
+material = SubResource("ShaderMaterial_sma3l")
+position = Vector2(690, 363)
+scale = Vector2(3, 3)
+texture = ExtResource("9_ceor7")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

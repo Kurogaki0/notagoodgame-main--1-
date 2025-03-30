@@ -1,0 +1,190 @@
+[gd_scene load_steps=16 format=3 uid="uid://jafvyygf5ep7"]
+
+[ext_resource type="PackedScene" uid="uid://bajs0k2b6myfv" path="res://Scene/player.tscn" id="1_fn7nv"]
+[ext_resource type="Script" uid="uid://bfa6b3fkf6ysj" path="res://Scripts/parallax_background.gd" id="2_i21ge"]
+[ext_resource type="Texture2D" uid="uid://bcvpdrk7g8i5c" path="res://Assets/background/backgorund2/1.png" id="3_sjkr2"]
+[ext_resource type="Script" uid="uid://c6hqn3k3l1xcy" path="res://Scripts/sprite_2d.gd" id="4_1f3dg"]
+[ext_resource type="Texture2D" uid="uid://x2eb6rbuymv4" path="res://Assets/background/backgorund2/2.png" id="5_ahht2"]
+[ext_resource type="Texture2D" uid="uid://bxagm31t3h6u0" path="res://Assets/background/backgorund2/3.png" id="6_3t27u"]
+[ext_resource type="Texture2D" uid="uid://bb3f7o5uge54u" path="res://Assets/background/backgorund2/4.png" id="7_o01w3"]
+[ext_resource type="Texture2D" uid="uid://4ockmihxoh48" path="res://Assets/background/backgorund2/5.png" id="8_10uob"]
+[ext_resource type="PackedScene" uid="uid://b1fnltbqnnbv8" path="res://Scene/Skool.tscn" id="9_ha8kd"]
+[ext_resource type="Texture2D" uid="uid://dfucwrs7uarkg" path="res://Assets/background/backgorund2/6.png" id="10_n7awp"]
+[ext_resource type="PackedScene" uid="uid://83rcx736eyto" path="res://Scene/portel.tscn" id="11_8301t"]
+[ext_resource type="PackedScene" uid="uid://8rokt3qjqjgj" path="res://Scene/good_ass_test_map.tscn" id="12_2n4gi"]
+[ext_resource type="PackedScene" uid="uid://bx51fygltp30y" path="res://Scene/portel2.tscn" id="13_ct4r3"]
+[ext_resource type="Script" uid="uid://bprf3q4w7d4te" path="res://Scripts/skol_to_house.gd" id="14_n2376"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a1kqi"]
+size = Vector2(64.5, 96)
+
+[node name="Game LVL" type="Node2D"]
+y_sort_enabled = true
+position = Vector2(-11, -14)
+
+[node name="Player" parent="." instance=ExtResource("1_fn7nv")]
+z_index = 1
+position = Vector2(1224, 647)
+scale = Vector2(0.8, 0.8)
+disable_mode = 2
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(0, -2.5)
+zoom = Vector2(6, 4)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="Player"]
+visible = false
+scroll_base_scale = Vector2(5, 5)
+script = ExtResource("2_i21ge")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Player/ParallaxBackground"]
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(1050, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/ParallaxBackground/ParallaxLayer"]
+scale = Vector2(3, 3)
+texture = ExtResource("3_sjkr2")
+script = ExtResource("4_1f3dg")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="Player/ParallaxBackground"]
+position = Vector2(0, -16)
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(1050, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/ParallaxBackground/ParallaxLayer2"]
+scale = Vector2(3, 3)
+texture = ExtResource("5_ahht2")
+script = ExtResource("4_1f3dg")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="Player/ParallaxBackground"]
+position = Vector2(0, -16)
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(1050, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/ParallaxBackground/ParallaxLayer3"]
+scale = Vector2(3, 3)
+texture = ExtResource("6_3t27u")
+script = ExtResource("4_1f3dg")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="Player/ParallaxBackground"]
+position = Vector2(0, -16)
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(1050, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/ParallaxBackground/ParallaxLayer4"]
+scale = Vector2(3, 3)
+texture = ExtResource("7_o01w3")
+script = ExtResource("4_1f3dg")
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="Player/ParallaxBackground"]
+position = Vector2(0, -16)
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(1050, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/ParallaxBackground/ParallaxLayer5"]
+scale = Vector2(3, 3)
+texture = ExtResource("8_10uob")
+script = ExtResource("4_1f3dg")
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+visible = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+position = Vector2(-393, 249)
+motion_scale = Vector2(0.6, 0.6)
+motion_mirroring = Vector2(850, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2(0, -697)
+scale = Vector2(1.5, 5.22)
+texture = ExtResource("3_sjkr2")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground2"]
+position = Vector2(-393, 249)
+motion_scale = Vector2(0.7, 0.7)
+motion_mirroring = Vector2(850, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer2"]
+position = Vector2(9, 0)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("5_ahht2")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground2"]
+position = Vector2(-393, 249)
+motion_scale = Vector2(0.8, 0.8)
+motion_mirroring = Vector2(850, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer3"]
+position = Vector2(4, 0)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_o01w3")
+centered = false
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground2"]
+position = Vector2(-393, 249)
+motion_scale = Vector2(0.9, 0.9)
+motion_mirroring = Vector2(850, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer4"]
+position = Vector2(13, 0)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("8_10uob")
+centered = false
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground2"]
+position = Vector2(-398, 254)
+motion_mirroring = Vector2(850, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer5"]
+position = Vector2(13, 0)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("10_n7awp")
+centered = false
+
+[node name="Inside School2" parent="." instance=ExtResource("11_8301t")]
+position = Vector2(436, 309)
+
+[node name="CollisionShape2D" parent="Inside School2" index="0"]
+position = Vector2(132, 193)
+
+[node name="Marker2D" parent="Inside School2" index="1"]
+position = Vector2(-294, -978)
+
+[node name="CanvasModulate" parent="Inside School2" index="2"]
+position = Vector2(129, 14)
+
+[node name="good ass test map" parent="." instance=ExtResource("12_2n4gi")]
+position = Vector2(100, -756)
+scale = Vector2(1.5, 1.5)
+
+[node name="need to change" parent="." instance=ExtResource("13_ct4r3")]
+position = Vector2(846, -282)
+
+[node name="CollisionShape2D" parent="need to change" index="0"]
+position = Vector2(-11, -154)
+
+[node name="Marker2D" parent="need to change" index="1"]
+position = Vector2(-280, 1007)
+
+[node name="CanvasModulate" parent="need to change" index="2"]
+position = Vector2(-11, -154)
+
+[node name="School to House" type="Area2D" parent="."]
+script = ExtResource("14_n2376")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="School to House"]
+position = Vector2(1340, 693)
+shape = SubResource("RectangleShape2D_a1kqi")
+
+[node name="outside of skool" parent="." instance=ExtResource("9_ha8kd")]
+position = Vector2(-66, 23)
+scale = Vector2(1.5, 1.5)
+metadata/_edit_lock_ = true
+
+[connection signal="body_entered" from="School to House" to="School to House" method="_on_body_entered"]
+[connection signal="body_exited" from="School to House" to="School to House" method="_on_body_exited"]
+
+[editable path="Inside School2"]
+[editable path="need to change"]

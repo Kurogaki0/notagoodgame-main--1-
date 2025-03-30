@@ -1,0 +1,18 @@
+Time line in order
+1-5 Is Scene1
+6-7 is Scence2
+8-9 is Scence3
+10-11 is Scence4
+1. waking up
+2. eating
+3  opening the door
+4. arrive at skol
+5. skol gate (name of the option, the condition idk how that works)
+6. classroom
+7.1 Alone
+7.2 With Friends
+8. Teacher
+9. Friendly Girl
+10. victim House (Name of the two option)
+11. victim (Need dialogue for the comforting scene)
+

@@ -1,0 +1,11 @@
+Narrator: The friendly girl approached the player and his friend and wants to help
+"Friendly Girl": Hey… can we talk for a second?
+Player: Yeah, of course. What’s going on?
+"Friendly Girl": It’s about the bullying. I would never do that to her. I’m not the one behind it.
+"Friendly Girl": I can help you find out who’s really behind it. I know how much this is hurting her.
+- Accept
+	Player: Okay, we could use all the help we can get. Let’s figure this out together.
+- Decline
+	Player: I appreciate it, but this is something we need to handle ourselves. Thanks for being there for her, though.
+"Friendly Girl": I can show you where her house is. If you want to go there, I’ll guide you.
+Player: Okay, let’s go to her house.

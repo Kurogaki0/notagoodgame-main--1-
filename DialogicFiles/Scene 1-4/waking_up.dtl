@@ -1,0 +1,10 @@
+Narrator: The sun peeked through the window, warming the player’s face as he slowly woke up. It was a quiet morning, just like every other day.
+join TestCharacter1 left
+Player: Ugh, is it morning already? I could’ve sworn I just closed my eyes.
+Player: Okay, I’ve got time. No need to rush
+leave TestCharacter1 [animation="Slide Out Right" length="1.0" wait="true"]
+join TestCharacter1 left
+Narrator: The player looks at a written message left by Mom
+join  center
+I left your breakfast at the table eat well son
+leave TestCharacter1 [animation="Slide Out Right" length="1.0" wait="true"]

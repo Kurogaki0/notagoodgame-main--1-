@@ -1,0 +1,26 @@
+join TestCharacter1 left
+Player: What should i look at
+- Friend GC
+	Player: Hehe, gotta reply later
+	return
+- School page
+	Player: Nothing is exciting here
+	return
+- Classroom GC
+	Player: What going on in here
+	Narrator: The commotion was just the usual, students asking for notes, sharing assignments, and trying to get last-minute help before going to school.
+	- Send Notes
+		Player: I’ll send my notes
+		"Classmate 1": Thanks, bro, I completely forgot
+		"Classmate 2": It was a snoozefest the whole class and I completely fell asleep.
+		Player: Don’t worry I was too. Just make sure to paraphrase guys.
+	- Flex??
+		Player: Good thing I finished it Yesterday, unlike you guys.
+		"Friend 1": Wait, you actually did the notes? Is that really you?
+		Player: Just trying to stay ahead of the game. You know, responsible and all that.
+		"Friend 2": Who even are you now? Can’t believe you’re this organized.
+		Player: New sem, new me.
+Narrator: The player gets ready to go to school after eating his breakfast
+\-The doorbell ring-
+Player: That must have been my friend
+leave TestCharacter1 [animation="Slide Out Right" length="1.0" wait="true"]

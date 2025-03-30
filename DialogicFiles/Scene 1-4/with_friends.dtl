@@ -1,0 +1,14 @@
+Narrator: The player and his  friends arrive at the gathering place and to know what the commotion really is all about is it something serious or just some gossip
+Player: Hey, what's going on around here? What are you guys talking about
+"Classmate 1": Have you not seen the post recently on our school someone posted about (victim) (the insult/ embarrassing things)
+Player: Wait, what? Who would post something like that?
+"Classmate 2": Right, who would do such things? He doesn't even have a friend who would comfort him/her
+"Classmate 3": That’s the thing no one knows.
+"Friend 1": Are you sure no one has a clue? Someone must know something.
+"Friend 2": Yeah, Why would that person even do that?
+- Ask about the post
+	Player: Can you tell me more about the post?
+	"Classmate 1": Yeah someone posted about her, making fun of her appearance that she is ugly and doesn't have any friends.
+- Check the post
+	Player: Lets go check the post
+	\-The player and his friends goes to check the post on the GC-

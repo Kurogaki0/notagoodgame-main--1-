@@ -1,0 +1,12 @@
+Narrator: The player arrives at the gathering place and proceeds to ask his classmates what the commotion is all about.
+Player: Hey, what's going on around here? What are you guys talking about
+"Classmate 1": Have you not seen the post recently on our school someone posted about (victim) (the insult/ embarrassing things)
+Player: Wait, what? Who would post something like that?
+"Classmate 2": Right, who would do such things? He doesn't even have a friend who would comfort him/her
+"Classmate 3": That’s the thing no one knows.
+- Ask about the post
+	Player: Can you tell me more about the post?
+	"Classmate 1": Yeah someone posted about her, making fun of her appearance that she ugly and doesn't have any friends.
+- Check the post
+	Player: Im going to check the post
+	\-The player goes to check the post on the gc-

@@ -1,0 +1,22 @@
+[remap]
+
+importer="YATI"
+type="PackedScene"
+uid="uid://d3wd2dmvktss"
+path="res://.godot/imported/down flor.tmx-a9ea912e6d3e3e914a858d5d92336b19.tscn"
+
+[deps]
+
+source_file="res://Assets/Tiled/Tiled/down flor.tmx"
+dest_files=["res://.godot/imported/down flor.tmx-a9ea912e6d3e3e914a858d5d92336b19.tscn"]
+
+[params]
+
+use_default_filter=false
+add_class_as_metadata=false
+add_id_as_metadata=false
+no_alternative_tiles=false
+map_wangset_to_terrain=false
+tiled_project_file=""
+post_processor=""
+save_tileset_to=""

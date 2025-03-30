@@ -1,0 +1,22 @@
+[remap]
+
+importer="YATI"
+type="PackedScene"
+uid="uid://qwh2y8bqcgru"
+path="res://.godot/imported/top flor.tmx-008dc7fe06fd41822dd8af4f1b728013.tscn"
+
+[deps]
+
+source_file="res://Assets/Tiled/Tiled/top flor.tmx"
+dest_files=["res://.godot/imported/top flor.tmx-008dc7fe06fd41822dd8af4f1b728013.tscn"]
+
+[params]
+
+use_default_filter=false
+add_class_as_metadata=false
+add_id_as_metadata=false
+no_alternative_tiles=false
+map_wangset_to_terrain=false
+tiled_project_file=""
+post_processor=""
+save_tileset_to=""
