@@ -1,13 +1,22 @@
-join "Mr Davidson" center
+join "Mr Davidson" left
 "Mr Davidson": Alright, class! Today, we’re exploring how light plays on water. Pay attention to ripples, reflections, and highlights. Let the water tell a story.
+leave "Mr Davidson"
 Narrator: [Player Name] hunched over their sketchbook, completely immersed. The colors blended perfectly, and the way the light bounced off the surface felt almost magical.
 Narrator: Mr. Davison leaned over, her smile warm.
+join "Mr Davidson" left
 "Mr Davidson": Beautiful work, [Player Name]. You’ve really captured the movement.
+leave "Mr Davidson"
 Narrator: [Player Name’s] cheeks flushed.
-join Player1 center
+join Player1 left
 Player1: Thank you, sir.
+leave Player1
 Narrator: Melody peeked over, her eyes widening.
-join Melody center
+join Melody left
 Melody: Whoa… okay, that’s insane. You HAVE to post that.
+leave Melody
+join Player1 left
 Player1: I will. After school.
+leave Player1
+join Melody left
 Melody: Good. People need to see this.
+leave Melody

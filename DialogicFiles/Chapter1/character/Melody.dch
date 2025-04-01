@@ -19,9 +19,10 @@
 "export_overrides": {
 "image": "\"res://Assets/Png/Character png/Melody.png\""
 },
+"ignore_char_scale": false,
 "mirror": true,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(0, -160),
+"scale": 0.4,
 "scene": ""
 }
 },

@@ -1,6 +1,9 @@
-Narrator: [Player Name] tossed their backpack onto the bed and opened up their phone, fingers itching to post. The familiar hum of the machine was oddly comforting.
-join Player1 center
+Narrator: [Player Name] tossed their backpack onto the bed and opened up their phone, fingers itching to post. 
+join Player1 left
 Player1: Experimenting with light and water reflections! CC welcome!
+leave Player1
 Narrator: [Player name] clicked ‘Post’ on Daimon Doodles. The initial responses were heartening. A few quick “likes” popped up, followed by a supportive comment from ArtLover22.
 Narrator: [Player Name] smiled, their eyes crinkling with genuine happiness.
+join Player1 left
 Player1: Maybe this one will finally get some real attraction…
+leave Player1

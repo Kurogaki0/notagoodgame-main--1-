@@ -6,11 +6,11 @@
 &"custom_info": {
 "sound_mood_default": "",
 "sound_moods": {},
-"style": "textstyle"
+"style": ""
 },
 &"default_portrait": "player",
 &"description": "",
-&"display_name": "Player1",
+&"display_name": "Player",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
@@ -20,8 +20,8 @@
 "image": "\"res://Assets/Png/Character png/player.png\""
 },
 "mirror": true,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(0, -160),
+"scale": 0.4,
 "scene": ""
 }
 },

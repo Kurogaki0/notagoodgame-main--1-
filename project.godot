@@ -83,8 +83,11 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
 glossary/default_case_sensitive=true
-layout/style_list=["res://DialogicFiles/Chapter1/style/textstyle.tres"]
+layout/style_list=[""]
 layout/default_style="res://DialogicFiles/Chapter1/style/textstyle.tres"
+variables={
+"response": ""
+}
 
 [display]
 
